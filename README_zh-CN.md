@@ -15,12 +15,6 @@
 ## 安装
 
 ```bash
-pip install solve24-mcp-server
-```
-
-或从源码安装：
-
-```bash
 git clone https://github.com/xuan-wei/solve24-mcp-server.git
 cd solve24-mcp-server
 pip install -e .
@@ -37,19 +31,6 @@ pip install -e .
   "mcpServers": {
     "solve24": {
       "command": "solve24-mcp-server"
-    }
-  }
-}
-```
-
-或使用 uvx（无需安装）：
-
-```json
-{
-  "mcpServers": {
-    "solve24": {
-      "command": "uvx",
-      "args": ["solve24-mcp-server"]
     }
   }
 }

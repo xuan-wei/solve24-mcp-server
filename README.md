@@ -15,12 +15,6 @@ Given four numbers, it finds arithmetic expressions that evaluate to 24.
 ## Installation
 
 ```bash
-pip install solve24-mcp-server
-```
-
-Or install from source:
-
-```bash
 git clone https://github.com/xuan-wei/solve24-mcp-server.git
 cd solve24-mcp-server
 pip install -e .
@@ -37,19 +31,6 @@ Add to your MCP client configuration:
   "mcpServers": {
     "solve24": {
       "command": "solve24-mcp-server"
-    }
-  }
-}
-```
-
-Or with uvx (no install needed):
-
-```json
-{
-  "mcpServers": {
-    "solve24": {
-      "command": "uvx",
-      "args": ["solve24-mcp-server"]
     }
   }
 }
