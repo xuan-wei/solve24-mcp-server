@@ -55,7 +55,25 @@ Or with uvx (no install needed):
 }
 ```
 
-### Run directly
+### Streamable HTTP (for cloud deployment)
+
+```bash
+MCP_TRANSPORT=streamable-http MCP_PORT=8000 solve24-mcp-server
+```
+
+Or with Docker:
+
+```bash
+docker build -t solve24-mcp-server .
+docker run -p 8000:8000 solve24-mcp-server
+```
+
+Environment variables:
+- `MCP_TRANSPORT`: `stdio` (default), `streamable-http`, or `sse`
+- `MCP_HOST`: bind address (default `0.0.0.0`)
+- `MCP_PORT`: port (default `8000`)
+
+### Run directly (stdio)
 
 ```bash
 solve24-mcp-server
